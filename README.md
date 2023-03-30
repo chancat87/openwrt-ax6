@@ -13,6 +13,27 @@ mtd write /tmp/cdt-AX6_AX3600_1G.bin /dev/mtd5
 
 ```
 
+大分区表结构
+
+```
+root@RedmiAX6:~# cat /proc/mtd
+dev:    size   erasesize  name
+mtd0: 00100000 00020000 "0:sbl1"
+mtd1: 00100000 00020000 "0:mibib"
+mtd2: 00300000 00020000 "0:qsee"
+mtd3: 00080000 00020000 "0:devcfg"
+mtd4: 00080000 00020000 "0:rpm"
+mtd5: 00080000 00020000 "0:cdt"
+mtd6: 00080000 00020000 "0:appsblenv"
+mtd7: 00100000 00020000 "0:appsbl"
+mtd8: 00080000 00020000 "0:art"
+mtd9: 00080000 00020000 "bdata"
+mtd10: 00100000 00020000 "pstore"
+mtd11: 023c0000 00020000 "ubi_kernel"
+mtd12: 06640000 00020000 "rootfs"
+
+```
+
 
 
 ![OpenWrt logo](include/logo.png)
