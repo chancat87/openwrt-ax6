@@ -89,7 +89,9 @@ platform_do_upgrade() {
 			mmc_do_upgrade "$1"
 		fi
 		;;
-	redmi,ax6|\
+	redmi,ax6)
+		nand_do_upgrade "$1"
+		;;
 	xiaomi,ax3600|\
 	xiaomi,ax9000)
 		# Make sure that UART is enabled

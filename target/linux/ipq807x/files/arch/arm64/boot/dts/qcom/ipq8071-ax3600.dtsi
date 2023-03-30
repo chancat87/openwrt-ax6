@@ -19,7 +19,7 @@
 
 	chosen {
 		stdout-path = "serial0:115200n8";
-		bootargs-append = " root=/dev/ubiblock0_0";
+		bootargs-append = " root=/dev/ubiblock0_1";
 	};
 
 	keys {
@@ -198,7 +198,7 @@
 			 */
 			rootfs: partition@2dc0000 {
 				label = "rootfs";
-				reg = <0x2dc0000 0xd240000>;
+				reg = <0xa00000 0xf000000>;
 			};
 		};
 	};

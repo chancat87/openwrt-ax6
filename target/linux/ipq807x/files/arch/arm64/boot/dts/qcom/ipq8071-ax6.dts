@@ -38,7 +38,7 @@
  * To be on the safe side, assume 128MiB of NAND.
  */
 &rootfs {
-	reg = <0x2dc0000 0x5220000>;
+	reg = <0xa00000 0x6640000>;
 };
 
 &wifi {

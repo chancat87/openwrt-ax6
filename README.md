@@ -1,3 +1,22 @@
+刷完后切记断电 
+
+
+mtd erase /dev/mtd1
+mtd write /tmp/ax6-mibib.bin /dev/mtd1
+mtd erase /dev/mtd7
+mtd write /tmp/uboot-redmi-ax6.bin /dev/mtd7
+
+mtd erase /dev/mtd7
+mtd write /tmp/uboot-redmi-ax6.bin /dev/mtd7
+
+mtd erase /dev/mtd5
+mtd write /tmp/cdt-AX6_AX3600_1G.bin /dev/mtd5
+
+
+
+
+
+
 ![OpenWrt logo](include/logo.png)
 
 OpenWrt Project is a Linux operating system targeting embedded devices. Instead
